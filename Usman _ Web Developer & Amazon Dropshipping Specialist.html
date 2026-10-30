@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Usman | Web Developer & Amazon Dropshipping Specialist</title>
+<meta name="description" content="Usman builds websites and helps sellers run Amazon dropshipping stores. Account handling from $50.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;800&family=Manrope:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f6;--surface:#fff;--ink:#0f1b2d;--muted:#55627a;--line:#d5dbe6;--accent:#2646e0;--accent-ink:#fff;--warm:#ffb81c;--warm-ink:#0f1b2d;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1220;--surface:#141e30;--ink:#eaeef6;--muted:#9aa8c0;--line:#25324a;--accent:#7c95ff;--accent-ink:#0b1220;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1220;--surface:#141e30;--ink:#eaeef6;--muted:#9aa8c0;--line:#25324a;--accent:#7c95ff;--accent-ink:#0b1220;color-scheme:dark}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Sora,"Trebuchet MS",system-ui,sans-serif;margin:0;line-height:1.08}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;gap:14px;flex-wrap:wrap}
+nav b{font-family:Sora,system-ui,sans-serif;font-size:19px}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;font-weight:600;font-size:15px}
+nav a{text-decoration:none}
+nav a:hover{text-decoration:underline}
+.btn{display:inline-block;background:var(--warm);color:var(--warm-ink);font:600 16px Manrope,system-ui,sans-serif;padding:13px 24px;border-radius:999px;text-decoration:none;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hero{padding:44px 0 70px;display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:end}
+.hero h1{font-size:clamp(44px,9vw,92px);font-weight:800;letter-spacing:-.035em}
+.role{font-family:Sora,system-ui,sans-serif;font-weight:600;font-size:clamp(18px,2.6vw,24px);color:var(--accent);margin:14px 0 18px}
+.hero p{color:var(--muted);max-width:48ch;margin:0 0 26px;font-size:18px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.status{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px}
+.status p{margin:0 0 6px;font-size:15px;color:var(--muted)}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#1fb26b;margin-right:8px}
+.status strong{display:block;font-family:Sora,system-ui,sans-serif;font-size:30px;margin:8px 0 2px}
+section{padding:60px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(28px,4vw,40px);font-weight:800;letter-spacing:-.02em;margin-bottom:12px}
+.lead{color:var(--muted);max-width:58ch;margin:0 0 30px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:34px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--surface);border:1px solid var(--line);padding:8px 16px;border-radius:999px;font-weight:600;font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.card.main{border:2px solid var(--accent)}
+.card h3{font-size:20px}
+.card p{margin:0;color:var(--muted);font-size:16px;flex:1}
+.price{font-family:Sora,system-ui,sans-serif;font-weight:800;font-size:26px}
+.proj{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.proj h3{font-size:21px;margin-bottom:4px}
+.proj p{margin:0;color:var(--muted);max-width:52ch}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px}
+form{display:grid;gap:12px}
+label{font-weight:600;font-size:15px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit;margin-top:4px}
+textarea{min-height:120px;resize:vertical}
+.note{font-size:14px;color:var(--muted);margin:0}
+.big{font-family:Sora,system-ui,sans-serif;font-weight:800;font-size:clamp(22px,3vw,28px);margin:6px 0 16px;word-break:break-word}
+footer{padding:26px 0 44px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:760px){.hero,.about,.contact{grid-template-columns:1fr}.hero{padding-bottom:40px}nav ul{gap:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Usman</b><ul><li><a href="#about">About</a></li><li><a href="#services">Services</a></li><li><a href="#work">Work</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+
+<main>
+<div class="hero">
+<div>
+<h1>Usman</h1>
+<div class="role">Web Developer & Amazon Dropshipping Specialist</div>
+<p>I build clean websites and handle Amazon dropshipping accounts, so clients can grow without the daily workload.</p>
+<div class="cta"><a class="btn" href="#contact">Hire me</a><a class="btn ghost" href="#services">View services</a></div>
+</div>
+<aside class="status" aria-label="Availability">
+<p><span class="dot"></span>Open for new clients</p>
+<strong>$50</strong>
+<p>Amazon account handling</p>
+</aside>
+</div>
+
+<section id="about">
+<div class="about">
+<div>
+<h2>About me</h2>
+<p class="lead">I am a web developer who also completed professional training in Amazon dropshipping. I build websites for small businesses and help sellers run their Amazon stores, with clear communication, honest advice and steady results.</p>
+</div>
+<div>
+<h3 style="margin-bottom:14px;font-size:20px">Skills</h3>
+<ul class="chips"><li>Web development</li><li>Amazon dropshipping</li><li>Product research</li><li>Account handling</li><li>Listing optimisation</li><li>Supplier sourcing</li></ul>
+<h3 style="margin:26px 0 14px;font-size:20px">Education</h3>
+<ul class="chips"><li>ADS / BSc</li></ul>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<p class="lead">Clear scope and clear pricing. Larger jobs get a fixed quote after a free chat.</p>
+<div class="cards">
+<div class="card main"><h3>Account handling</h3><p>I manage your Amazon account: orders, customer messages, ads and weekly reports.</p><div class="price">$50</div><a class="btn" href="#contact">Start now</a></div>
+<div class="card"><h3>Product research</h3><p>Products with real demand, low competition and healthy margins.</p><div class="price">Custom quote</div></div>
+<div class="card"><h3>Store setup</h3><p>Listings, titles, bullet points and images, ready to go live.</p><div class="price">Custom quote</div></div>
+<div class="card"><h3>Web development</h3><p>Fast, mobile-friendly websites for businesses, portfolios and online stores.</p><div class="price">Custom quote</div></div>
+</div>
+</section>
+
+<section id="work">
+<h2>Work</h2>
+<p class="lead">A look at what I build for my own business.</p>
+<div class="proj">
+<div><h3>Amazon Dropshipping Services website</h3><p>A client-focused site with a live profit calculator and a direct WhatsApp contact button.</p></div>
+<a class="btn ghost" href="https://claude.ai/artifact/1dabgJzQmHxZb2vhmmpwdr" target="_blank" rel="noopener">View project</a>
+</div>
+</section>
+
+<section id="contact">
+<div class="contact">
+<div>
+<h2>Let’s work together</h2>
+<p class="lead">Fastest reply is on WhatsApp.</p>
+<div class="big" style="margin-bottom:6px">0326 3735395</div>
+<p style="margin:0 0 18px"><a href="mailto:mlk6655779@gmail.com">mlk6655779@gmail.com</a></p>
+<a class="btn" href="https://wa.me/923263735395?text=Hi%20Usman%2C%20I%20want%20to%20hire%20you" target="_blank" rel="noopener">Chat on WhatsApp</a>
+</div>
+<form id="f">
+<div><label for="n">Your name</label><input id="n" required autocomplete="name"></div>
+<div><label for="m">What do you need help with?</label><textarea id="m" required></textarea></div>
+<button class="btn" type="submit">Send via WhatsApp</button>
+<p class="note">This opens WhatsApp with your message ready to send.</p>
+</form>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Usman. All rights reserved.</footer>
+</div>
+<script>
+document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=document.getElementById("n").value.trim(),m=document.getElementById("m").value.trim();
+  if(!n||!m)return;
+  var t="Hi Usman, I am "+n+". "+m;
+  window.open("https://wa.me/923263735395?text="+encodeURIComponent(t),"_blank","noopener");
+});
+</script>
+</body>
+</html>
